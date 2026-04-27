@@ -1,0 +1,193 @@
+.ded-panel {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ─── Header ────────────────────────────────────────────────────────────────── */
+.ded-header {
+  flex-shrink: 0;
+}
+
+.ded-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.ded-sub {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ─── Summary Bar ───────────────────────────────────────────────────────────── */
+.ded-summary {
+  background: var(--gold-bg);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--border-radius-lg);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.ds-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.ds-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.ds-value {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.ds-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--gold-border);
+}
+
+/* ─── Card List ─────────────────────────────────────────────────────────────── */
+.ded-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ─── Deduction Card ────────────────────────────────────────────────────────── */
+.ded-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.ded-card:hover {
+  border-color: var(--border-normal);
+}
+
+.ded-card-head {
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 13px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: left;
+}
+
+.ded-card-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ded-icon {
+  font-size: 20px;
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.ded-section-name {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.ded-limit-badge {
+  font-size: 11px;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 2px 9px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.ded-chevron {
+  font-size: 16px;
+  color: var(--text-muted);
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+/* ─── Card Body ─────────────────────────────────────────────────────────────── */
+.ded-card-body {
+  padding: 0 14px 14px;
+  animation: fadeSlideUp 0.2s ease;
+}
+
+.ded-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ded-item {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 3px 0;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.ded-item::before {
+  content: "•";
+  color: var(--gold);
+  font-size: 16px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+/* ─── Tip Box ────────────────────────────────────────────────────────────────── */
+.ded-tip {
+  margin-top: 10px;
+  background: var(--teal-bg);
+  border: 1px solid var(--teal-border);
+  border-radius: var(--border-radius-sm);
+  padding: 9px 12px;
+  font-size: 12.5px;
+  color: var(--teal);
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.ded-tip-icon {
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+/* ─── Footer Note ────────────────────────────────────────────────────────────── */
+.ded-note {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-style: italic;
+  padding: 0 2px;
+}
