@@ -31,6 +31,9 @@ const limiter = rateLimit({
   message: { error: "Too many requests. Please slow down." },
 });
 app.use("/api/", limiter);
+app.get("/", (req, res) => {
+  res.send("TaxBot Backend is running 🚀");
+});
 
 // ─── System Prompt ─────────────────────────────────────────────────────────────
 const SYSTEM_PROMPT = `You are a professional Tax Assistant chatbot specializing in the Indian tax system.
